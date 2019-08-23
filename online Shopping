@@ -1,0 +1,40 @@
+# Functional-Programming
+Es6
+
+// Online Shopping
+const user = {
+  name: 'Kim',
+  active: true,
+  cart: [],
+  purchases: []
+}
+
+//Implement a cart feature:
+// 1. Add items to cart.
+
+item= {
+  name: 'shoe',
+  price: 350
+}
+user['cart'].push(item);
+console.log(user['cart']);
+console.log(user);
+
+// 2. Add 3% tax to item in cart
+//get price
+
+ let getPrice= user['cart'][0].price;
+console.log(getPrice);
+let addTax= getPrice*0.03;
+let itemPrice= addTax+getPrice;
+console.log(itemPrice);
+// 3. Buy item: cart --> purchases
+//Move item from cart to purchase
+ user['purchases'].push(item);
+console.log(user['purchases']);
+// 4. Empty cart
+delete user['cart'][0];
+console.log(user['cart']);
+//Bonus:
+// accept refunds.
+// Track user history.
