@@ -1,0 +1,21 @@
+# Functional-Programming
+Es6
+
+//Given a string of word s, you need to find the highest scoring word.
+
+function scoringLetter(letter){
+return  letter.toLowerCase().charCodeAt(0)-96;
+}
+
+console.log(scoringLetter("a"));
+
+function high(x){
+let splitWord= x.toLowerCase().split(" ");
+
+return splitWord.map(sbStr){
+   return sbStr.split("").map(scoringLetter).reduce((pre,cur) => pre+cur).sort((a,b) => b -a );
+}
+
+}
+
+console.log(high("My name is Christina"));
