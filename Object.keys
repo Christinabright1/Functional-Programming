@@ -1,0 +1,11 @@
+# Functional-Programming
+Es6
+Object.keys is used to convert object into array
+
+const obj= {
+  name: 'Jonh',
+  ocupation: 'Front-end developer',
+  hobby:'reading'
+};
+const userArray= Object.keys(obj);
+console.log(userArray);
