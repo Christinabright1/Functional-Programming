@@ -1,0 +1,11 @@
+# Functional-Programming
+Es6
+Convert array into object
+
+/*change array into object*/ 
+
+const users= ['Jonh','Doe','Joel'];
+
+const usersObj= {...users};
+
+console.log(usersObj);
