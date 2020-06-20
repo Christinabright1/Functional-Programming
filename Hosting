@@ -1,0 +1,8 @@
+We should  be aware of the hoisting feature in JavaScript which allows access to function declarations before they’re defined.
+
+console.log(greetWorld()); // Output: Hello, World!
+
+function greetWorld() {
+  console.log('Hello, World!');
+}
+Notice how hoisting allowed greetWorld() to be called before the greetWorld() function was defined! Since hoisting isn’t considered good practice, we simply want you to be aware of this feature.
